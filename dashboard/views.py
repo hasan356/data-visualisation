@@ -27,8 +27,6 @@ def index(request):
 	opacity = 0.4
 	error_config = {'ecolor': '0.3'}
 
-	rev = Revenue.objects.all()
-
 	rects1 = ax.bar(index, maruti, bar_width,
 	                alpha=opacity, color='b',
 	                yerr=std_maruti, error_kw=error_config,
