@@ -8,7 +8,6 @@ import os,sys
 import datetime
 import matplotlib.dates as mdates
 import matplotlib.cbook as cbook
-from .models import Revenue 
 
 def index(request):
 	# Bar chart
