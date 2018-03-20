@@ -87,7 +87,7 @@ def piechart(request):
 	# Pie chart, where the slices will be ordered and plotted counter-clockwise:
 	labels = 'Maruti', 'Honda', 'Hyundai', 'Ford'
 	sizes = [45, 30, 15, 10]
-	explode = (0, 0.1, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+	explode = (0, 0.1, 0, 0)
 
 	fig1, ax1 = plt.subplots()
 	ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
