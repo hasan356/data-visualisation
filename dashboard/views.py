@@ -123,7 +123,7 @@ def linegraph(request):
 	# round to nearest years...
 	datemin = np.datetime64(r.date[0], 'Y')
 	datemax = np.datetime64(r.date[-1], 'Y') + np.timedelta64(1, 'Y')
-	ax.set_xlim(datemin, datemax)
+	# ax.set_xlim(datemin, datemax)
 
 
 	# format the coords message box
