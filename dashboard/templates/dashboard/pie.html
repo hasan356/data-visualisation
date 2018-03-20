@@ -1,0 +1,25 @@
+{% extends 'dashboard/base.html' %}
+{% block pie_active %}active{% endblock %}
+{% load staticfiles %}
+{% block body%}
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10">
+        <h1 style="font-family: 'Lobster', cursive; text-align: center;">Visualizing data with different methods of visualization</h1>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10">        
+        <div class="box" style="text-align: center;">
+          <h1 style="text-align: center; font-family: 'Cagliostro', sans-serif;">Piechart</h1>
+          <h3>Brandwise market share of different brands of car</h3>
+          <img class="img-responsive center-block" src="{% static 'dashboard/images/pie.png' %}" class="img-responsive" alt="piechart">          
+        </div>
+      </div>    
+    </div>    
+
+  </div>
+  <br><br>
+{% endblock %}

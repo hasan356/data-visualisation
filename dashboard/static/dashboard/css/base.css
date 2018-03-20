@@ -1,0 +1,36 @@
+/*
+primary dark- 0b3c5d
+primary light - 328cc1
+secondary light- d9b310 #d8a424
+secondary dark - 1d2731
+*/
+
+body {
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background: url(../images/1.png) repeat;
+}
+
+.ui.menu {
+  background: rgba(255,255,255,0);
+  border: none;
+  box-shadow: none;
+}
+
+.ui.menu .item {
+  color: white;
+}
+
+.ui.icon.menu {
+  margin-right: 2rem;
+}
+
+.ui.icon.menu .item {
+  background: rgba(29,39,49,1);
+  margin: 0 3px;
+}
+
+.ui.icon.menu .item:hover {
+  background: rgba(255,39,49,1);
+}

@@ -1,0 +1,241 @@
+/*
+primary dark- 0b3c5d
+primary light - 328cc1
+secondary light- d9b310 #d8a424
+secondary dark - 1d2731
+*/
+
+
+
+.carousel_bg{
+    margin-top: -20px;
+    position: absolute;
+    /*background-color: #d8a424;*/
+    background: #d8a424; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d8a424, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d8a424, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d8a424, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d8a424, #fff); /* Standard syntax */
+    height: 350px;
+    width: 100%;
+
+}
+
+.send {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+input, textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+#carousel img{
+    /*margin: 15px;*/
+    /*width: 80%;*/
+}
+
+#carousel{
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 0px 0px 20px #1d2731;
+    border: 5px solid white;
+    width: 96.5%;
+}
+
+.footercp{
+    background-color: #1d2731;
+}
+
+.navbar{
+    background-color: #0b3c5d;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 5px 10px #1d2731;
+    -moz-box-shadow: 0px 5px 10px #1d2731;
+    box-shadow: 0px 5px 10px #1d2731;
+    z-index:999;
+    width: 100%;
+}
+
+.navbar .active {
+    background-color: #d9b310;
+    color: #1d2731 !important;
+    /*border-radius: 5px;*/
+    /*font-weight: bold;*/
+}
+
+.navbar .nav > li > a:hover{
+    background-color: #d9b310;
+    color: #1d2731;
+    /*border-radius: 5px;*/
+}
+
+.navbar .nav > li > a:focus{
+    background-color: #d9b310;
+    color: #1d2731;
+    /*border-radius: 5px;*/
+}
+
+.see-more a:hover{
+    text-decoration: none;
+
+}
+
+.box{
+    padding:5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: -8px 4px 8px 0 #0006, -4px 6px 20px 0 #0006;*/
+    background-color: white;
+    padding-top: 30px;
+    margin: 20px 0px;
+}
+
+.cards{
+    background-color: #1d2731;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 16px; 
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    width: 250px; 
+    border-radius: 5px;
+    box-shadow: -2px 2px 10px #0006;
+    margin-left: 15px;
+}
+
+.color-me{  
+    color: white;
+}
+
+.heading{
+    background-color: #0b3c5d;
+}
+
+.heading a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+u{
+    text-decoration: none;
+    border-bottom: 3px solid white;
+}​
+
+.social{
+    margin-left: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.social div{
+    float: right;
+    margin:1%;  
+    /*width: 22%;*/
+    background-size: cover;
+    border-radius: 50%;
+    -webkit-transition: .4s; /* For Safari 3.1 to 6.0 */
+    transition: .4s;
+}
+.social div:hover{
+    border-radius: 20%;
+    cursor:pointer;
+}
+.social img{
+    margin: 0 auto;
+    padding: 0;
+    -webkit-transition: .2s; /* For Safari 3.1 to 6.0 */
+    transition: .2s;
+}
+.social img:hover{
+    cursor:pointer;
+    opacity: 0;
+}
+
+.facebook{
+    background:url('./images/hover/facebook.png');
+}
+
+.twitter{
+    background:url('./images/hover/twitter.png');
+}
+
+/*.googleplus{
+    background:url('./images/googleplus.png');
+}
+*/
+
+.containers {
+  position: relative;
+  width: 30%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.containers:hover .overlay {
+  opacity: 0.6;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.ui.menu {
+  background: rgba(255,255,255,0);
+  box-shadow: "#fff 0"
+}
