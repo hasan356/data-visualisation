@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'dashboard/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'dashboard/style.css' %}"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="{% static 'school/bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
@@ -30,10 +30,7 @@
         <!-- Items -->
         <div class="collapse navbar-collapse" id="topNavBar">
             <ul class="nav navbar-nav">
-                <li class="{% block index_active %}{% endblock %}"><a href="{% url 'dashboard:index' %}"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp; Barchart</a></li>
-                <li class="{% block hist_active %}{% endblock %}"><a href="{% url 'dashboard:histogram' %}"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span>&nbsp; Histogram</a></li>
-                <li class="{% block pie_active %}{% endblock %}"><a href="{% url 'dashboard:piechart' %}"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span>&nbsp; Piechart</a></li>
-                <li class="{% block line_active %}{% endblock %}"><a href="{% url 'dashboard:linegraph' %}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp; Linegraph</a></li>
+                <li class="{% block index_active %}{% endblock %}"><a href="{% url 'dashboard:index' %}"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp; Different Plots</a></li>
             </ul>            
         </div>
     </div>

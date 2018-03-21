@@ -47,11 +47,22 @@ def index(request):
 	fig.tight_layout()
 	if os.path.exists('dashboard/static/dashboard/images/bar.png'):
 		os.remove('dashboard/static/dashboard/images/bar.png')
-	plt.savefig('dashboard/static/dashboard/images/bar.png')		
+	plt.savefig('dashboard/static/dashboard/images/bar.png')	
 
-	return render(request, 'dashboard/index.html')
+	# Pie chart, where the slices will be ordered and plotted counter-clockwise:
+	labels = 'Maruti', 'Honda', 'Hyundai', 'Ford'
+	sizes = [45, 30, 15, 10]
+	explode = (0, 0.1, 0, 0)
 
-def histogram(request):
+	fig1, ax1 = plt.subplots()
+	ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+	        shadow=True, startangle=90)
+	ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+	plt.title('Brandwise market share of different brands of car')
+	if os.path.exists('dashboard/static/dashboard/images/pie.png'):
+		os.remove('dashboard/static/dashboard/images/pie.png')
+	plt.savefig('dashboard/static/dashboard/images/pie.png')
+
 	#Histogram
 	np.random.seed(19680801)
 
@@ -79,28 +90,8 @@ def histogram(request):
 	fig.tight_layout()
 	if os.path.exists('dashboard/static/dashboard/images/histogram.png'):
 		os.remove('dashboard/static/dashboard/images/histogram.png')
-	plt.savefig('dashboard/static/dashboard/images/histogram.png')
+	plt.savefig('dashboard/static/dashboard/images/histogram.png')	
 
-	return render(request, 'dashboard/hist.html')
-
-def piechart(request):
-	# Pie chart, where the slices will be ordered and plotted counter-clockwise:
-	labels = 'Maruti', 'Honda', 'Hyundai', 'Ford'
-	sizes = [45, 30, 15, 10]
-	explode = (0, 0.1, 0, 0)
-
-	fig1, ax1 = plt.subplots()
-	ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
-	        shadow=True, startangle=90)
-	ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-	if os.path.exists('dashboard/static/dashboard/images/pie.png'):
-		os.remove('dashboard/static/dashboard/images/pie.png')
-	plt.savefig('dashboard/static/dashboard/images/pie.png')
-
-	return render(request, 'dashboard/pie.html')
-
-def linegraph(request):	
 	#Linegraph
 	years = mdates.YearLocator()   # every year
 	months = mdates.MonthLocator()  # every month
@@ -141,4 +132,4 @@ def linegraph(request):
 		os.remove('dashboard/static/dashboard/images/line.png')
 	plt.savefig('dashboard/static/dashboard/images/line.png')
 
-	return render(request, 'dashboard/line.html')
+	return render(request, 'dashboard/index.html')
