@@ -1,4 +1,4 @@
-# Data-visualisation
+# Data-Visualisation
 A dashboard for visualizing data with some different method of visualization like pie charts, line graphs, histogram and barchart.
 
 To run the app follow the following steps:
